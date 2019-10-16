@@ -32,7 +32,6 @@ public class Util implements AppConstant.MimeTypeConstants {
     }
 
     public static String getDurationString(long duration) {
-//        long days = duration / (1000 * 60 * 60 * 24);
         long hours = (duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
         long minutes = (duration % (1000 * 60 * 60)) / (1000 * 60);
         long seconds = (duration % (1000 * 60)) / 1000;
